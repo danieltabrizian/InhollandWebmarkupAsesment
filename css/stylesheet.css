@@ -92,6 +92,11 @@ tr{
     width: 100%;
 }
 @media screen and (min-width: 1280px) {
+    .sidebyside{
+        display:inline-block; vertical-align:top;
+        max-width: 40%;
+        padding: 15px;
+    }
     section{
         padding-left: 100px;
         padding-right: 100px;
@@ -105,18 +110,32 @@ tr{
     #contactcontent article footer{
         display: inline-block;
     }
+
+    .showondesktop{
+        display: initial;
+    }
+    .showonmobile{
+        display: none;
+    }
 }
-@media only screen and (max-device-width: 1280px) {
+@media screen and (max-device-width: 1280px) {
     .parallax {
         background-attachment: scroll;
     }
+    .showondesktop{
+        display: none;
+    }
+    .showonmobile{
+        display: initial;
+    }
+    .sidebyside{
+        max-width: 90vw;
+    }
 
 }
-.sidebyside{
-    display:inline-block; vertical-align:top;
-    max-width: 40%;
-    padding: 15px;
-}
+
+
+
 #myVideo {
     position: fixed;
     top: 0;
