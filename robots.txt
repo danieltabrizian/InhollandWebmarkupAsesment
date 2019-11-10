@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /forbidden
+Sitemap: http://www.bjj-hoofddorp.nl/sitemap.xml
