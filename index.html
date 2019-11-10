@@ -8,7 +8,18 @@
     <meta name="author" content="Daniel Tabrizian">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-
+        .backtotop{
+            background-color: #2699fb;
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            text-align: center;
+            font-size: 3em;
+            text-decoration: none;
+            color: white;
+        }
         body{
             margin: 0px;
             font-family: "Berlin Sans FB";
@@ -60,6 +71,21 @@
         #secondarycontent{
             background-color: white;
         }
+        #referalcontent{
+            background-color: white;
+        }
+        #footercontent{
+            background-color: white;
+        }
+        #footercontent article footer{
+            text-align: center;
+        }
+        #sportcontent{
+            background-image: url("https://cdn.pixabay.com/photo/2016/08/07/08/49/mma-1575854_960_720.jpg");
+        }
+        #contactcontent{
+            background-image: url("images/parralax_contact.jpg");
+        }
         section{
             padding-top: 70px;
             padding-bottom: 50px;
@@ -83,6 +109,12 @@
             #maincontent {
                 width: calc(100% - 200px);
             }
+            #contactcontent article header{
+                display: inline-block;
+            }
+            #contactcontent article footer{
+                display: inline-block;
+            }
         }
         @media only screen and (max-device-width: 1280px) {
             .parallax {
@@ -102,6 +134,27 @@
             min-height: 100%;
             z-index: -1;
         }
+        fieldset > label{
+            display: block;
+        }
+        fieldset > input{
+            display: block;
+            margin-bottom: 10px;
+        }
+        fieldset > textarea{
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        fieldset > input:focus, fieldset > textarea:focus{
+            border-color: #2699fb;
+            border-style: solid;
+        }
+        #contactform{
+            min-width: 50vw;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -113,6 +166,9 @@
         <ul>
             <li><a href="#maincontent">Hoofddorp</a></li>
             <li><a href="#secondarycontent">Toolenburg</a></li>
+            <li><a href="#sportcontent">Sport</a></li>
+            <li><a href="#referalcontent">Jiu-Jitsu</a></li>
+            <li><a href="#contactcontent">Contact</a></li>
         </ul>
     </nav>
 
@@ -151,5 +207,135 @@
         </article>
 
     </section>
+    <section id="sportcontent" class="parralax">
+        <article>
+            <header>
+                <h2>Sport verenigingen in Hoofddorp</h2>
+            </header>
+            <table>
+                <col width="70%">
+                <tr>
+                    <td><a href="http://www.bcpax.nl/"><h3>Badmintonvereniging PAX</h3></a>
+                        <p>BVpax bestaat al 35 jaar en verzorgd badminton evenementen in Hoofddorp</p>
+                    </td>
+                    <td><a href="http://www.bcpax.nl/"><img src="images/bvpax.jpg" width="400px" alt="foto van een badminton"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://www.bvhoofddorp.nl/"><h3>Basketbalvereniging Hoofddorp</h3></a>
+                        <p>Basketbalvereniging Hoofddorp is met rond de 400 leden al jarenlang een van de grotere basketbalclubs van Nederland. </p>
+                    </td>
+                    <td><a href="http://www.bvhoofddorp.nl/"><img src="images/bvhd.jpg" width="400px" alt="Foto van een basketbal"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://www.saikoro.nl/"><h3>Dojo Saikoro</h3></a>
+                        <p>Lessen in zelfverdedigingstechnieken rondom Hoofddorp, zeer grote leden aantal.</p>
+                    </td>
+                    <td><a href="http://www.saikoro.nl/"><img src="images/saikoro.jpg" width="400px" alt="Foto van zwarte band in vechtsport"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.taekwon.nl/brazilian-jiu-jitsu/"><h3>Hwa-Rang Dragon</h3></a>
+                        <p>De meest bekende Jiu-Jitsu dojo van de omgeving, met een laagdrempelige insteek van de training is het geschikt voor elk leeftijd!</p>
+                    </td>
+                    <td><a href="https://www.taekwon.nl/brazilian-jiu-jitsu/"><img src="images/jiujitsu.jpg" width="400px" alt="Man in aanvalspositie"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.mhcdereigers.nl/"><h3>MHC de Reigers</h3></a>
+                        <p>Zeer groot hockey vereniging midden in Hoofddorp, vooral populair onder de meiden van Hoofddorp. Kortom als je van hockey houd ben je hier te vinden</p>
+                    </td>
+                    <td><a href="https://www.mhcdereigers.nl/"><img src="images/reigers.jpg" width="400px" alt="Foto van meidenhockey"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.hoofddorp-pioniers.nl/"><h3>Pioneers</h3></a>
+                        <p>In park21 vind je de Pioneer, opgericht door Coen Lammerts in 1966 en snel uitgegroeid tot een bekend honkbalvereniging binnen Hoofddorp</p>
+                    </td>
+                    <td><a href="https://www.hoofddorp-pioniers.nl/"><img src="images/pioneers.jpg" width="400px" alt="Foto van een honkbal"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.svhoofddorp.nl/"><h3>S.V. Hoofddorp</h3></a>
+                        <p>Op de Ijweg in Hoofddorp vind je de grootste voetbal vereniging van Hoofddorp, met zijn 5 velden is het snel gegroeid afgelopen 10 jaar</p>
+                    </td>
+                    <td><a href="https://www.svhoofddorp.nl/"><img src="images/svhoofddorp.jpg" width="400px" alt="Foto van een voetbal"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.svpax.nl/"><h3>OSV Pax</h3></a>
+                        <p>OSV Pax is al jaren de gymnastiekvereniging in Haarlemmermeer voor jong en oud. Plezier in de sport staat bij SV Pax centraal.</p>
+                    </td>
+                    <td><a href="https://www.svpax.nl/"><img src="images/svpax.jpg" width="400px" alt="Foto van gymnastiek tournament"></a></td>
+                </tr>
+                <tr>
+                    <td><a href="http://www.tvhoofddorp.nl/"><h3>Tennisvereniging Hoofddorp</h3></a>
+                        <p>Geniet van het mooiste tennispark in Hoofddorp. Het park is prachtig gelegen in een rustige omgeving. Er zijn 12 tennisbanen, waarvan er 10 verlicht zijn. </p>
+                    </td>
+                    <td><a href="http://www.tvhoofddorp.nl/"><img src="images/tvhd.jpg" width="400px" alt="Foto van een tennisracket"></a></td>
+                </tr><tr>
+                <td><a href="http://zpch.nl/"><h3>Zwem en Polo Club Hoofddorp(ZPCH)</h3></a>
+                    <p>Naast leszwemmen heeft deverenigin een grote sportafdeling met waterpolo, wedstrijdzwemmen en synchroonzwemmen. </p>
+                </td>
+                <td><a href="http://zpch.nl/"><img src="images/zpch.jpg" width="400px" alt="Onderwater foto van eem meisje die aan het zwemmen is"></a></td>
+            </tr>
+
+            </table>
+            <footer>
+                Er zijn nog veel andere sport complexen,verenigingen en clubs te vinden nabij Hoofddorp. Dit zijn een paar van de bekenste op een rijtje gezet.
+            </footer>
+        </article>
+    </section>
+    <section id="referalcontent" class="parralax">
+        <article>
+            <header>
+                <h2>Hwa-Rang Dragon</h2>
+            </header>
+            <p>
+                Brazilian Jiu Jitsu is bekend geworden met de Gracie challenge. Vanaf 1920 daagde de Gracie familie iedereen uit tot een open gevecht om te bewijzen dat Jiu Jitsu de meest effectieve stijl ter wereld is. Met behulp van Jiu Jitsu versloegen ze boksers, karateka, hapkido beoefenaars en heel veel andere verschillende vechtsporters.
+            </p>
+            <p>
+                Uiteindelijk is dit uitgegroeid tot de oprichting van de Ultimate Fighting Challenge, oftewel de UFC, die door Royce Gracie in de eerste paar edities met gemak gewonnen werd.
+            </p>
+            <p>
+                Jiu Jitsu is een sport over controle over een ander. Het is absoluut geen sport waarbij je op elkaar in slaat zoals bij andere vechtsporten. Op die manier is Jiu Jitsu geschikt voor mannen, vrouwen, kinderen, jong en oud. Het unieke van Jiu Jitsu is dat je de technieken leert die passen bij je lichaamsbouw. Sommige mensen zijn groter en zwaarder en zullen zich meer richten op druk en controle. Ben je kleiner, dan richt je je meer op techniek en snelheid. Ben je lang en dun dan kun je veel met je benen doen.
+            </p>
+            <footer>
+                Als dit jou aanspreekt bevelen wij sterk aan om een proefles aan te vragen bij Hwa-Rang Dragon, een van de grootste vechtsportscholen uit de regio.
+            </footer>
+            <aside>Klik voor meer info <a href="https://www.taekwon.nl/brazilian-jiu-jitsu/">hier</a></aside>
+        </article>
+    </section>
+    <section id="contactcontent" class="parralax">
+        <article>
+            <header>
+                <h4>Contact Informatie</h4>
+                <p>U kunt ons bereiken op:</p>
+                <ul>
+                    <li>Tel: 0612345678</li>
+                    <li>Email: prive@inholland.nl</li>
+                    <li><p><span>Of op locatie:</span>
+                        <span>Nepadres 69 te Haarlem</span></p></li>
+                </ul>
+                <p><span>Als u vragen heeft kunt u ook ons contact formulier gebruiken,</span><span> een medewerker zal u dan zo snel mogelijk beantwoorden</span></p>
+            </header>
+            <footer>
+                <form id="contactform" action="http://witan.nl/inholland/testform.php" method="post">
+                    <fieldset>
+                        <legend>Contact formulier</legend>
+                        <label>Naam:</label>
+                        <input type="text" name="name" placeholder="John Doe">
+                        <label>Email:</label>
+                        <input type="email" name="email" placeholder="JohnDoe@mail.com">
+                        <label>Bericht:</label>
+                        <textarea rows="10" name="message"></textarea>
+                        <input type="submit" value="Verzend">
+                    </fieldset>
+                </form>
+            </footer>
+        </article>
+    </section>
+    <section id="footercontent">
+        <article>
+            <footer>
+                Copyright  &copy;  Daniel Tabrizian, Student Inholland(655002)
+            </footer>
+        </article>
+    </section>
+    <a href="#topheader" class="backtotop"><span>^</span></a>
 </body>
 </html>
